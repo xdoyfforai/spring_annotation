@@ -6,7 +6,9 @@ import java.io.IOException;
  * @date 2020/3/16
  */
 public class Hello implements Filter {
-  public void init(FilterConfig filterConfig) throws ServletException {}
+  public void init(FilterConfig filterConfig) throws ServletException {
+    System.out.println("init...");
+  }
 
   public void doFilter(
       ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
